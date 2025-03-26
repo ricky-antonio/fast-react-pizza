@@ -1,7 +1,5 @@
 import React from "react";
 
-const x = 23; 
-
 const App = () => {
     return (
         <div>

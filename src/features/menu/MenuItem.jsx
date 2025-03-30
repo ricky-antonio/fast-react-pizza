@@ -13,7 +13,7 @@ const MenuItem = ({ pizza }) => {
 
     const handleAddToCart = () => {
         const newItem = {
-            id,
+            pizzaId: id,
             name,
             quantity: 1,
             unitPrice,

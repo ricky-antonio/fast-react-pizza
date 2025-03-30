@@ -4,7 +4,7 @@ import UpdateItemQuantity from "./UpdateItemQuantity";
 
 
 const CartItem = ({ item }) => {
-    const { id, name, quantity, totalPrice } = item;
+    const { pizzaId, name, quantity, totalPrice } = item;
    
     return (
         <li className="py-3 sm:flex sm:items-center sm:justify-between">
@@ -15,8 +15,8 @@ const CartItem = ({ item }) => {
                 <p className="text-sm font-bold">
                     {formatCurrency(totalPrice)}
                 </p>
-                <UpdateItemQuantity id={id} quantity={quantity} />
-                <DeleteItem id={id} />
+                <UpdateItemQuantity id={pizzaId} quantity={quantity} />
+                <DeleteItem id={pizzaId} />
             </div>
         </li>
     );

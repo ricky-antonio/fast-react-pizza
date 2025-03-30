@@ -47,7 +47,7 @@ const Order = () => {
 
             <ul className="divide-y divide-stone-200 border-b border-t">
                 {cart.map((item, i) => (
-                    <OrderItem item={item} key={i}  />
+                    <OrderItem item={item} key={item.pizzaId}  />
                 ))}
             </ul>
 

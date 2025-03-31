@@ -6,8 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
     clearCart,
     getCart,
-    getTotalCartCost,
-    getUsername,
+    getTotalCartCost
 } from "../cart/cartSlice";
 import store from "../../store";
 import { formatCurrency } from "../../utils/helpers";
